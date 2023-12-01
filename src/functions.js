@@ -22,7 +22,10 @@ function average(x, y) {
 //   approximatelyEqual(10.001, 10);
 //   => true
 // 
-function approximatelyEqual() {}
+function approximatelyEqual(x, y) {
+  if (Math.abs(x - y < 0.001))
+  return true
+}
 
 // Given a first name and last name, return a full name in the format "FIRST LAST"
 // Ex.:
@@ -53,7 +56,7 @@ function generateSentence(person, beverage, location) {
 let newVow = ""
 function censorVowels(string) {
   for (let i = 0; i < string.length; i++){
-    if (string[i] === 'a' || string[i] === 'i'){
+    if (string[i] === 'a' || string[i] === 'i' || string[i] === 'e' || string[i] === 'o' || string [i] === 'u'){
       newVow = newVow + '*'}
       else  {
         newVow = newVow + string[i]
@@ -71,6 +74,7 @@ function stickyCase(string) {
     return stickyCase.toUpperCase()
   }
 }
+
 
 // Return the given string in leetspeak. Leetspeak is a modified version of
 // English where characters are replaced by numbers or symbols. For this
