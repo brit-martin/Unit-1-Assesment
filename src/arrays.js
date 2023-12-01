@@ -7,9 +7,10 @@ function greaterThanTen(numbers) {
   for (let i = 0; i < numbers.length; i++){
     if (numbers[i] > 10){
       newNum.push(numbers[i])
-  } return newNum
-}
-}
+    } 
+  } 
+  return newNum
+} 
 
 // Given an array of strings, return all words that start with 'b' or 'B'.
 // Ex.:

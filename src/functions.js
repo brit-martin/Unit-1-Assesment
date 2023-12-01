@@ -70,10 +70,12 @@ function censorVowels(string) {
 //   stickyCase('hello world');
 //   => 'hElLo wOrLd'
 function stickyCase(string) {
-  for (i = 0; i < string.length; i = i+2){
-    return stickyCase.toUpperCase()
+    let word = string.toUpperCase()
+    for (let i = 0; i < string.length; i = i+2)
+    if
+  
+  return word
   }
-}
 
 
 // Return the given string in leetspeak. Leetspeak is a modified version of
@@ -89,6 +91,12 @@ function stickyCase(string) {
 //   leetspeak('javascript');
 //   => 'j4v45cr1p7'
 function leetspeak(string) {}
+//   for (let i = 0; i < string.length; i++){
+//     if (string[i] === "a")
+//     return 4
+// } else if {(string[i] === "e")
+//     return 3
+//   } else if{(string[i] === 'i')}
 
 export {
   approximatelyEqual,
