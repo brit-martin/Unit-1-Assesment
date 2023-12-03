@@ -69,13 +69,14 @@ function censorVowels(string) {
 // Ex.:
 //   stickyCase('hello world');
 //   => 'hElLo wOrLd'
+
 function stickyCase(string) {
     let word = string.toUpperCase()
-    for (let i = 0; i < string.length; i = i+2)
-    if
-  
-  return word
-  }
+    for (let i = 0; i < string.length; i = i+2){ 
+      word.push(string[i])
+    }
+     return word
+}
 
 
 // Return the given string in leetspeak. Leetspeak is a modified version of
@@ -88,16 +89,28 @@ function stickyCase(string) {
 //   s => 5
 //   t => 7
 // Ex.:
-//   leetspeak('javascript');
-//   => 'j4v45cr1p7'
-function leetspeak(string) {}
-//   for (let i = 0; i < string.length; i++){
-//     if (string[i] === "a")
-//     return 4
-// } else if {(string[i] === "e")
-//     return 3
-//   } else if{(string[i] === 'i')}
+  // leetspeak('javascript');
+  // => 'j4v45cr1p7'
 
+function leetspeak(string) {
+  let language = ""
+  for (let i = 0; i < string.length; i++){
+    if (string[i] === "a"){
+      language = language + "4"}
+    else if (string[i] === "e"){
+      language = language + '3'}
+    else if (string[i] === 'i'){
+      language = language + "1"}
+    else if (string[i] === 'o'){
+      language = language + "0"}
+    else if (string[i] === 's'){
+      language = language + '5'
+    } else if (string[i] === 't'){
+      language = language + "7"
+    }
+   }
+ return language
+}
 export {
   approximatelyEqual,
   average,
@@ -107,4 +120,4 @@ export {
   generateSentence,
   leetspeak,
   stickyCase,
-};
+}

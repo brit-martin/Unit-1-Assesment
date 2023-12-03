@@ -16,12 +16,15 @@ function greaterThanTen(numbers) {
 // Ex.:
 //   bWords(['banana', 'orange', 'apple', 'Bonobo', 'kiwi', 'pear']);
 //   => ['banana', 'Bonobo]
+let food = []
 function bWords(words) { 
   for (let i =0; i <words.length; i++){
     if (words[i] === 'b'|| words[i] === "B")
-    return
-  }
-}
+      food.push(words[i])
+    }
+    return food 
+  } 
+
 
 // Add all the elements from additionalItems to the end of originalArray.
 // Return the originalArray..
@@ -29,8 +32,10 @@ function bWords(words) {
 //  extend([1, 2, 3], [4, 5, 6]);
 //  => [1, 2, 3, 4, 5, 6]
 function extend(originalArray, additionalItems) {
-  additionalItems.push
-}
+    for (let i = 0; i <additionalItems.length; i++){
+    additionalItems.push(originalArray)}
+      return originalArray
+} 
 
 // Return an array of all items with the given length.
 // Ex.:
@@ -44,7 +49,12 @@ function itemsWithLength(items, length) {
 // Ex.:
 //   everyOtherItem(['a', 'b', 'c', 'd', 'e']);
 //   => ['a', 'c', 'e']
-function everyOtherItem(items) {}
+let letters = []
+function everyOtherItem(items) {
+  for (let i = 0; i <items.length; i = i +2){
+    letters.push(items[i])}
+  return letters
+}
 
 // Given a list of words and a letter, return the indexes of the words that
 // start with that letter. You can assume that the words and letter will always
