@@ -85,7 +85,9 @@ function findIndex(items, value) {}
 // Ex.:
 //   range(1, 5);
 //   => [1, 2, 3, 4, 5]
-function range(start, stop) {}
+function range(start, stop) {
+  
+}
 
 export {
   bWords,

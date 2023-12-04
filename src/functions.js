@@ -71,9 +71,13 @@ function censorVowels(string) {
 //   => 'hElLo wOrLd'
 
 function stickyCase(string) {
-    let word = string.toUpperCase()
-    for (let i = 0; i < string.length; i = i+2){ 
-      word.push(string[i])
+    let word = ""
+    for (let i = 0; i < string.length; i++){ 
+      if ( i % 2 == 0){
+        word += string[i].toLowerCase();
+      } else { 
+        word += string[i].toUpperCase();
+      } 
     }
      return word
 }
