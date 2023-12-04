@@ -31,9 +31,10 @@ function bWords(words) {
 // Ex.:
 //  extend([1, 2, 3], [4, 5, 6]);
 //  => [1, 2, 3, 4, 5, 6]
+
 function extend(originalArray, additionalItems) {
     for (let i = 0; i <additionalItems.length; i++){
-    additionalItems.push(originalArray)}
+    additionalItems.pop(originalArray)}
       return originalArray
 } 
 
@@ -41,7 +42,9 @@ function extend(originalArray, additionalItems) {
 // Ex.:
 //   itemsWithLength(['a', 'bbb', 'cccc', 'dddddd', 'eee'], 3);
 //   => ['bbb', 'eee']
+
 function itemsWithLength(items, length) {
+
   return
 }
 

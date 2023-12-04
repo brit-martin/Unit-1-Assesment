@@ -99,17 +99,23 @@ function stickyCase(string) {
 function leetspeak(string) {
   let language = ""
   for (let i = 0; i < string.length; i++){
-    if (string[i] === "a"){
+    if 
+    (string[i] === "a"){
       language = language + "4"}
-    else if (string[i] === "e"){
+    else if 
+      (string[i] === "e"){
       language = language + '3'}
-    else if (string[i] === 'i'){
+    else if 
+      (string[i] === 'i'){
       language = language + "1"}
-    else if (string[i] === 'o'){
+    else if (
+      string[i] === 'o'){
       language = language + "0"}
-    else if (string[i] === 's'){
+    else if 
+      (string[i] === 's'){
       language = language + '5'
-    } else if (string[i] === 't'){
+    } else if 
+      (string[i] === 't'){
       language = language + "7"
     }
    }
